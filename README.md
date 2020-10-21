@@ -1,6 +1,6 @@
 # Sumário executivo
 
-![](https://img.shields.io/github/stars/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/forks/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/tag/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/release/wecchi/AdTracking-Fraud-Detection-Challenge/explorer.r) ![](https://img.shields.io/github/issues/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/bower/v/wecchi)
+![](https://img.shields.io/github/stars/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/forks/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/release/wecchi/AdTracking-Fraud-Detection-Challenge/explorer.r) ![](https://img.shields.io/github/issues/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/tag/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/bower/v/wecchi)
 
 ## Sobre
 
