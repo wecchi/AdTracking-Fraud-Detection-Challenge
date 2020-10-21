@@ -1,25 +1,28 @@
-# AdTracking Fraud Detection Challenge
+# Sumário executivo
 
 ![](https://img.shields.io/github/stars/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/forks/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/tag/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/github/release/wecchi/AdTracking-Fraud-Detection-Challenge/explorer.r) ![](https://img.shields.io/github/issues/wecchi/AdTracking-Fraud-Detection-Challenge) ![](https://img.shields.io/bower/v/wecchi)
 
-## Description
+## Sobre
 
-> Fraud risk is everywhere, but for companies that advertise online, click fraud can happen at an overwhelming volume, resulting in misleading click data and wasted money. Ad channels can drive up costs by simply clicking on the ad at a large scale. With over 1 billion smart mobile devices in active use every month, China is the largest mobile market in the world and therefore suffers from huge volumes of fradulent traffic.  TalkingData, China’s largest independent big data service platform, covers over 70% of active mobile devices nationwide. They handle 3 billion clicks per day, of which 90% are potentially fraudulent. Their current approach to prevent click fraud for app developers is to measure the journey of a user’s click across their portfolio, and flag IP addresses who produce lots of clicks, but never end up installing apps. With this information, they've built an IP blacklist and device blacklist.  While successful, they want to always be one step ahead of fraudsters and have turned to the Kaggle community for help in further developing their solution. In their 2nd competition with Kaggle, you’re challenged to build an algorithm that predicts whether a user will download an app after clicking a mobile app ad. To support your modeling, they have provided a generous dataset covering approximately 200 million clicks over 4 days!
+> O risco de fraude está em toda parte, especialmente para empresas que anunciam online, a fraude de cliques pode acontecer em um volume avassalador, resultando em dados de cliques enganosos e dinheiro desperdiçado. Os canais de anúncios podem aumentar os custos simplesmente clicando no anúncio em grande escala. Com mais de 1 bilhão de dispositivos móveis inteligentes em uso ativo todos os meses, a China é o maior mercado móvel do mundo e, portanto, sofre de grandes volumes de tráfego fradulento.
 
-## Data fields
-Each row of the training data contains a click record, with the following features.
+A [TalkingData](https://www.talkingdata.com/) é a maior plataforma independente de serviços de big data da China e cobre mais de 70% dos dispositivos móveis ativos em todo o país. Eles lidam com 3 bilhões de cliques por dia, dos quais 90% são potencialmente **fraudulentos**. Sua abordagem atual para evitar fraudes de cliques para desenvolvedores de aplicativos é medir a jornada do clique de um usuário em seu portfólio, e sinalizar endereços IP que produzem muitos cliques, mas nunca acabam instalando aplicativos. Com essas informações, eles construíram uma lista negra de IP e uma lista negra de dispositivos.
 
-- ``ip``: ip address of click.
-- ``app``: app id for marketing.
-- ``device``: device type id of user mobile phone (e.g., iphone 6 plus, iphone 7, huawei mate 7, etc.)
-- ``os``: os version id of user mobile phone
-- ``channel``: channel id of mobile ad publisher
-- ``click_time``: timestamp of click (UTC)
-- ``attributed_time``: if user download the app for after clicking an ad, this is the time of the app download
-- ``is_attributed``: the target that is to be predicted, indicating the app was downloaded
-Note that ip, app, device, os, and channel are encoded.
+## Descrição
+Prever se após o clique do anúncio o usuário fará o download para instalar o aplicativo.
 
-The test data is similar, with the following differences:
 
-- ``click_id``: reference for making predictions
-- ``is_attributed``: not included
+## Dicionário de dados
+
+As seguintes variáveis estão disponíveis para análise:
+
+- ``ip``: endereço de clique.
+- ``app``: id do aplicativo para marketing.
+- ``device``:  identificação do tipo de dispositivo do telefone celular do usuário (por exemplo, iphone 6 plus, iphone 7, huawei mate 7, etc.)
+- ``os``: versão do sistema operacional do celular do usuário
+- ``channel``: id do canal do editor de anúncios móveis
+- ``click_time``: data do clique com fuso horário (UTC)
+- ``attributed_time``: hora do download do aplicativo quando o usuário baixar o aplicativo depois de clicar no anúncio
+- ``is_attributed``: o alvo a ser previsto, indicando que o aplicativo foi baixado
+
+[Origem dos dados: ``kaggle``](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection/data?select=train_sample.csv)
